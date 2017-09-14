@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--<meta charset="{CHARSET}">-->
+		<title>超链接演示</title>
+	</head>
+	<body>
+		
+		<a href="http://cn.bing.com" target="_blank">必应一下</a>
+		<!-- img 用于图片显示
+			src 图片路径
+			width 宽度
+			height 高度
+			title 当鼠标移动到图片上时所显示的标题
+			border 图片的边框
+			usemap 使用map
+		-->
+		<br />
+		<!-- 图片的热点分割技术
+			将图片分割成几个部分以作不同的点击事件
+			map
+				area shape 形状   coords 形状的坐标 rectangle为左上点xy与右下点xy
+					 href 链接	alt 
+		-->
+		
+		<img src="./images/nice笑脸.jpg" width="800" height="800" title="林的手机壳" usemap="#double-mu"/>
+		<!--
+        <img src="bg.jpg"  width="800" height="800" title="林的手机壳" usemap="#a"/>
+		-->
+		<map name="double-mu">
+			<area shape="rect" coords="0,0,400,800" href="first.html"></area>
+			<area shape="rect" coords="400,0,800,800" href="body.html"></area>
+			<area shape="circle" coords="" href="" alt="happy"/>
+			
+		</map>
+		<!-- 返回顶部功能 -->
+		<a href="#top">turn TOP</a>
+		
+	</body>
+</html>

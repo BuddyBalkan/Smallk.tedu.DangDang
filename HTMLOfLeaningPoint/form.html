@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>表单的语法演示</title>
+	</head>
+	<body>
+		<form action="" method="post">
+			用户名：<input type="text" name="userName"/><br />
+			密码：<input type="password" name="userPassword"/><br />
+			生理性别：
+			♂<input type="radio" value="man" name="gender"/>
+			♀<input type="radio" value="lady" name="gender"/><br />
+			兴趣:
+			文学<input type="checkbox" name="interests" value="literature" />
+			绘画<input type="checkbox" name="interests" value="drawing" />
+			音乐<input type="checkbox" name="interests" value="music" />
+			舞蹈<input type="checkbox" name="interests" value="dance" />
+			雕塑<input type="checkbox" name="interests" value="sculpture" />
+			戏剧<input type="checkbox" name="interests" value="drama" />
+			建筑<input type="checkbox" name="interests" value="architecture" />
+			电影<input type="checkbox" name="interests" value="film" /><br />
+			<input type="hidden" name="id" value="1001"></input><br />
+			<input type="submit" name="submit" value="提交" />
+			<input type="reset" name="reset" value="重置所有" />
+			<input type="button" name="button" value="戳我" /><br />
+			<select name="你去过的城市">
+				<option value="霞浦">霞浦</option>
+				<option value="宁德">宁德</option>
+				<option value="福州">福州</option>
+				<option value="杭州">杭州</option>
+				<option value="舟山"></option>
+				<option value="南京"></option>
+				<option value="扬州"></option>
+				<option value="无锡"></option>
+				<option value="嘉兴"></option>
+				<option value="绍兴"></option>
+				<option value="兰州"></option>
+				<option value="陇南"></option>
+				<option value="潍坊"></option>
+				<option value="青岛"></option>
+			</select>
+		</form>
+	</body>
+</html>
