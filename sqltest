@@ -1,0 +1,11 @@
+CREATE TABLE t_emp(
+	id int PRIMARY KEY,
+	password varchar(50) NOT NULL,
+	name varchar(20) NOT NULL,
+	birthday date,
+	salary double
+);
+INSERT INTO t_emp(id,password,name,birthday,salary) VALUES (
+	1001,'abc123','zhangSan','2017-09-18',3300.21),
+	(1002,'123456','liSi',20170919,10000.32),
+	(1003,'xyz789','wangWu',20171001,8000.0);

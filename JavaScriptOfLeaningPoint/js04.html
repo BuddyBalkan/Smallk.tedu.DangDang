@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>JS练习</title>
+		<script type="text/javascript">
+			function getMsg(){
+				var x = document.getElementById("textMsg");
+//				alert(x.value);
+				var divv = document.getElementById("ddd");
+				alert(divv.innerHTML);
+			}
+			function setMsg(){
+				var a = document.getElementById("textMsg");
+				var b = document.getElementById("ddd");
+//				alert("lll");
+				b.innerHTML = a.value;
+				b.style.fontSize = 50;
+				b.style.color = "#ffffcc";
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" id="setInput" value="settings" onclick="setMsg()"/>
+		<input type="button" id="" value="gettings" onclick="getMsg()"/><br />
+		<input type="text" id="textMsg" name="" />
+		<div id="ddd">
+			today is a Monday
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>js完成图片的显示和隐藏</title>
+		<script type="text/javascript">
+			// 完成图片的显示功能
+			function imgShow(){
+				var x=document.getElementById("img");
+				x.style.visibility="visible";
+			}
+			// 完成图片的隐藏功能
+			function imgHidden(){
+				var x=document.getElementById("img");
+				x.style.visibility="hidden";
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" name="show" id="show" value="戳我显示林的手机壳" 
+			onclick="imgShow()"
+			/>
+		<input type="button" name="hidden" id="hidden" value="戳我隐藏林的手机壳" 
+			onclick="imgHidden()"
+			/>
+		<br />
+		<img src="e:/tedu/DangDang/images/nice笑脸.jpg" id="img"/>
+	</body>
+</html>

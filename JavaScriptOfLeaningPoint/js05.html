@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>JS完成用户名验证</title>
+		<script type="text/javascript">
+			function checkname(){
+//				alert("gggg");
+				var x = document.getElementById("memberName");
+				var s = document.getElementById("tipsForMemberName");
+				var len = x.value.length;
+				if (len == 0) {
+					s.innerHTML = "member name 不能为空。";
+//					alert("aaa");
+				} else if(len >= 6 && len <= 20){
+					s.innerHTML = "输入格式正确。"
+//					alert("bbb");
+				} else{
+//					alert("ccc");
+					s.style.color = "#d42d2e";	
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 离开焦点事件-->
+		member name:<input type="text" name="memberName" id="memberName" value="" onblur="checkname()"/>
+		<span id="tipsForMemberName">
+			请输入用户名，（6至20位）
+		</span>
+		<br />
+		password:<input type="password" name="personnelPassword" /><br />
+		<input type="button" id="" value="" />
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<script type="text/javascript">
+			function bigger(){
+				var x = document.getElementById("theP");
+				x.style.fontSize="larger";
+			}
+			function smaller(){
+				var x = document.getElementById("theP");
+				x.style.fontSize="smaller";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="theP">
+			today is a Friday.
+		</div><br />
+		<input type="button" id="bigger" value="bigger" onclick="bigger()"/>
+		<input type="button" id="smaller" value="smaller" onclick="smaller()"/>
+	</body>
+</html>

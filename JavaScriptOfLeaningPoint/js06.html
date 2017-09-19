@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>JS完成猜数字游戏</title>
+		<script type="text/javascript">
+			var randomNum = Math.floor(Math.random() * 100);
+			function tryATime(){
+				var t = (document.getElementById("yourNumber")).value;
+				if (t > randomNum) {
+					alert("往小了猜。");
+				} else if (t < randomNum) {
+					alert("往大了猜。");
+				} else{
+					alert("对了，就是这个数。");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1> Guess Number Game</h1><br />
+		<input type="text" id="yourNumber" value="" />
+		<input type="button" id="try" value="试一下" onclick="tryATime()" /><br />
+		<span id="tips">
+			输入所猜的数字（0-100的整数）
+		</span>
+	</body>
+</html>
