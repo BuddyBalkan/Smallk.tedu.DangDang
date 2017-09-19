@@ -22,7 +22,7 @@ public class TestSelect {
         Connection connection = DBUtil.getConnection();// 使用该方法将以上操作替代
         // 3.获得PreparedStatement对象，预执行SQL编译
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM t_emp");
-        ResultSet resultSet = preparedStatement.getResultSet();
+        ResultSet resultSet = preparedStatement.executeQuery();
 //          以下是另一种方法 不知道区别
 //        Statement statement = connection.createStatement();
 //        ResultSet resultSet = statement.executeQuery("SELECT * FROM t_emp ");

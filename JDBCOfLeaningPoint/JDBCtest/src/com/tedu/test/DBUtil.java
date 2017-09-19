@@ -10,7 +10,7 @@ import java.sql.SQLException;
  */
 public class DBUtil {
     static final String JDBC_Driver = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql//localhost:3306/dangdangwan";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/dangdangwan";
     static final String DB_userName = "root";
     static final String DB_userPassword = "123";
 
