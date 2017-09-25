@@ -35,4 +35,13 @@
         <servlet-name>EmpServlet</servlet-name>
         <url-pattern>/t_emp</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>EmpDeleteServlet</servlet-name>
+        <servlet-class>com.tedu.test.EmpDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmpDeleteServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    
 </web-app>

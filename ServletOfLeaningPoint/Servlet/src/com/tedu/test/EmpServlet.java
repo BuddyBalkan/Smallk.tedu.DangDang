@@ -45,7 +45,8 @@ public class EmpServlet extends HttpServlet{
                     "\t\t\t<td>name</td>\n" +
                     "\t\t\t<td>birthday</td>\n" +
                     "\t\t\t<td>salary</td>\n" +
-                    "\t\t</tr>\n" );
+                    "<td>operation</td>"+
+                    "\t\t</tr>\n");
 
             while (resultSet.next()){
                 out.println("<tr align=\"center\">\n" +
@@ -59,6 +60,10 @@ public class EmpServlet extends HttpServlet{
                         "</td>\n" +
                         "\t\t\t<td>" + resultSet.getDouble("salary") +
                         "</td>\n" +
+                        "<td>\n" +
+                        "\t\t\t\t<a href=\"/delete?id=" + resultSet.getInt("id") +
+                        "\"><input type=\"button\" value=\"delete\"></a>\n" +
+                        "\t\t\t</td>"+
                         "\t\t</tr>");
             }
             out.println("\t</table>");
