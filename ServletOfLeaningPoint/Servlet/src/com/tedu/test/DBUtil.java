@@ -2,6 +2,7 @@ package com.tedu.test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
@@ -27,5 +28,17 @@ public class DBUtil {
             System.out.println("获取链接失败，可能用户密码已修改、用户名已修改、数据库名已修改、数据库端口已修改。");
         }
         return connection;
+    }
+    public static void Close(Connection connection, PreparedStatement preparedStatement){
+        try {
+            if (preparedStatement != null){
+                preparedStatement.close();
+            }
+            if (connection != null){
+                connection.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

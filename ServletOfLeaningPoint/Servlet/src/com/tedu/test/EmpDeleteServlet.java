@@ -29,13 +29,7 @@ public class EmpDeleteServlet extends HttpServlet{
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            try {
-                if (preparedStatement != null){
-                    preparedStatement.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            DBUtil.Close(connection,preparedStatement);
         }
         // 2、通过重新定向技术返回原界面
         resp.sendRedirect("/t_emp");

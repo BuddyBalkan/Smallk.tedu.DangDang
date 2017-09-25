@@ -67,9 +67,11 @@ public class EmpServlet extends HttpServlet{
                         "\t\t</tr>");
             }
             out.println("\t</table>");
+            out.println("<a href=\"/addEmp.html\">to addEmp link</a>");
 
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("从数据库获取数据失败 SQL可能存在问题");
         }finally {
             try {
                 if (resultSet != null){
