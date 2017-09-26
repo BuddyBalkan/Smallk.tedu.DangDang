@@ -1,9 +1,6 @@
 package com.tedu.util;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * Created by SmallK on 2017/9/19.
@@ -11,7 +8,7 @@ import java.sql.SQLException;
  */
 public class DBUtil {
     static final String JDBC_Driver = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost:3306/dangdangwan";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/dang";
     static final String DB_userName = "root";
     static final String DB_userPassword = "123";
 
@@ -37,6 +34,16 @@ public class DBUtil {
             if (connection != null){
                 connection.close();
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void Close(ResultSet resultSet, PreparedStatement preparedStatement, Connection connection){
+        try {
+            if (resultSet != null){
+                resultSet.close();
+            }
+            Close(preparedStatement, connection);
         } catch (SQLException e) {
             e.printStackTrace();
         }
