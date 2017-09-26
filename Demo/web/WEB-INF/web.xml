@@ -10,6 +10,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>BookList</servlet-name>
-        <url-pattern>/booklist.jsp</url-pattern>
+        <url-pattern>/booklist</url-pattern>
     </servlet-mapping>
 </web-app>

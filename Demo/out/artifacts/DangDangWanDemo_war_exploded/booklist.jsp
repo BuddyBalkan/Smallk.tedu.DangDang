@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<title>当当图书 – 全球最大的中文网上书店</title>
- 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+ 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<link href="css/book.css" rel="stylesheet" type="text/css" />
 		<link href="css/second.css" rel="stylesheet" type="text/css" />
 		<link href="css/secBook_Show.css" rel="stylesheet" type="text/css" />
@@ -74,44 +74,50 @@
                     <%
                         // 在jsp中 out request response 都是内置对象，可以直接调用
                         ArrayList<DBook> books = (ArrayList<DBook>) request.getAttribute("bs");
-                        System.out.println(books);
+                        for (int i = 0; i < books.size(); i++){
+                            DBook book = books.get(i);
+					%>
+					<div class="list_r_list">
+						<span class="list_r_list_book">
+							<a target='_blank' name="link_prd_img" href='#'>
+								<img title="<%=book.getProductName()%>" class="dang_img"
+								src='productImages/<%=book.getProductPic()%>' /> </a> </span>
+						<h2>
+							<a target='_blank' name="link_prd_name"
+							   href='#'><%=book.getProductName()%></a>
+						</h2>
+						<h3>
+							顾客评分：100
+						</h3>
+						<h4 class="list_r_list_h4">
+							作 者:
+							<a href='#' name='作者'><%=book.getAuthor()%></a>
+						</h4>
+						<h4>
+							出版社：
+							<a href='#' name='出版社'><%=book.getPublishing()%></a>
+						</h4>
+						<h4>
+							出版日期：<%=book.getPublishTime()%>
+						</h4>
+						<h5>
+							<%=book.getDescription()%>
+						</h5>
+						<div class="clear"></div>
+						<h6>
+							<span class="del">定价</span>
+							<span class="red">当当价</span> 节省：<%=book.getFixedPrice()-book.getDangPrice()%>
+						</h6>
+						<span class="list_r_list_button"> <img align="top"
+															   src='images/buttom_goumai.gif'
+															   onclick="javascript:window.location.href='cart.html'" /> </span>
+						<span id="cartInfo_1"></span>
+					</div>
+
+                    <%
+						}
                     %>
-                    <div class="list_r_list">
-						<span class="list_r_list_book"><a target='_blank'
-                                                          name="link_prd_img" href='#'> <img
-                                title="上课头疼的故事" class="dang_img"
-                                src='productImages/1.jpg' /> </a> </span>
-                        <h2>
-                            <a target='_blank' name="link_prd_name"
-                               href='#'>上课头疼的故事</a>
-                        </h2>
-                        <h3>
-                            顾客评分：100
-                        </h3>
-                        <h4 class="list_r_list_h4">
-                            作 者:
-                            <a href='#' name='作者'>我写的</a>
-                        </h4>
-                        <h4>
-                            出版社：
-                            <a href='#' name='出版社'>地球出版社</a>
-                        </h4>
-                        <h4>
-                            出版日期：2011-11-11
-                        </h4>
-                        <h5>
-                            这真是一本好书啊
-                        </h5>
-                        <div class="clear"></div>
-                        <h6>
-                            <span class="del">定价</span>
-                            <span class="red">当当价</span> 节省：￥200
-                        </h6>
-                        <span class="list_r_list_button"> <img align="top"
-                                                               src='images/buttom_goumai.gif'
-                                                               onclick="javascript:window.location.href='cart.html'" /> </span>
-                        <span id="cartInfo_1"></span>
-                    </div>
+
 
 
 
