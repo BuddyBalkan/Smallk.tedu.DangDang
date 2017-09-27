@@ -9,9 +9,14 @@ import java.sql.*;
 public class DBUtil {
     static final String JDBC_Driver = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost:3306/dang";
+    static final String CharsetUTF8 ="?useUnicode=true&characterEncoding=utf8";// 用于设置数据库的编码
     static final String DB_userName = "root";
     static final String DB_userPassword = "123";
 
+    /**
+     * 如名 获取数据库连接
+     * @return 返回连接类型
+     */
     public static Connection getConnection(){
         Connection connection = null;
         try {
@@ -26,6 +31,12 @@ public class DBUtil {
         }
         return connection;
     }
+
+    /**
+     * 如名 封装安全关闭方法 用于增删改操作
+     * @param preparedStatement 需要关闭的preparedStatement
+     * @param connection 需要关闭的connection
+     */
     public static void Close(PreparedStatement preparedStatement, Connection connection){
         try {
             if (preparedStatement != null){
@@ -38,6 +49,13 @@ public class DBUtil {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 如名 安全关闭连接等 用于查询数据操作
+     * @param resultSet 需要关闭的resultSet
+     * @param preparedStatement 需要关闭的prepareStatement
+     * @param connection 需要关闭的connection
+     */
     public static void Close(ResultSet resultSet, PreparedStatement preparedStatement, Connection connection){
         try {
             if (resultSet != null){

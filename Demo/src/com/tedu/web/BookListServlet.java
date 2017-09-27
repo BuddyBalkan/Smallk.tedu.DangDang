@@ -24,9 +24,11 @@ public class BookListServlet extends HttpServlet{
 
         // servlet 属于控制层负责调用模型层 获取模型层返回的结果。
         ArrayList<DBook> books = BookDao.getAllBooks();
-        // 将模型层的返回的结果，转发给页面，由页面完成显示功能
+        // 将模型层的返回的结果，转发给页面，由页面完成显示功能 (请求转发: servlet未完成的工作交给下一个组件完成，使用转发[带object])
         req.setAttribute("bs",books);
         req.getRequestDispatcher("booklist.jsp").forward(req,resp);// 在完成一整个HTTP事务使用的都是同一个req和resp
+
+        //以下是练习代码
 //        // 1、使用JDBC连接数据库，查询出结果集
 //        Connection connection = DBUtil.getConnection();
 //        PreparedStatement preparedStatement = null;

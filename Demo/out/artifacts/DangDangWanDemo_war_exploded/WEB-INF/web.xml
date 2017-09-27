@@ -12,4 +12,12 @@
         <servlet-name>BookList</servlet-name>
         <url-pattern>/booklist</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.tedu.web.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
 </web-app>

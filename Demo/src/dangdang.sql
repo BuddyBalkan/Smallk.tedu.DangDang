@@ -130,7 +130,7 @@ DROP TABLE IF EXISTS d_user;
 CREATE TABLE d_user (
   id int(12) NOT NULL auto_increment,
   email varchar(50) NOT NULL,
-  nickname varchar(50) default NULL,
+  nickName varchar(50) default NULL,
   password varchar(50) NOT NULL,
   PRIMARY KEY  (id),
   UNIQUE KEY email (email)

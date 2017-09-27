@@ -17,6 +17,10 @@ import java.sql.Date;
  * 2.
  */
 public class BookDao {
+    /**
+     * 该方法发出指令 从数据库中获取所有d_book的信息并封装到ArrayList<DBook>中 并将其返回
+     * @return 封装完成的ArrayList<DBook>
+     */
     public static ArrayList<DBook> getAllBooks(){
         Connection connection = DBUtil.getConnection();
         PreparedStatement preparedStatement = null;

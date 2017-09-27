@@ -1,4 +1,4 @@
-<%@ page import="java.util.ArrayList" pageEncoding="utf-8" contentType="text/html;utf-8" %> <!-- 设置-->
+<%@ page import="java.util.ArrayList" pageEncoding="utf-8" contentType="text/html;charset=utf-8" %> <!-- 设置-->
 <%@ page import="com.tedu.bean.DBook" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -26,9 +26,9 @@
 				<div class="head_welcome_right">
 					<span class="head_welcome_text"> </span>
 					<span class="head_welcome_text"> <span class="little_n">
-							| <a href="login.html" name="mydangdang" class="head_black12a">登录</a> |
-							<a href="register.html" name="helpcenter" class="head_black12a"
-							target="_blank">注册</a> | </span> </span>
+							| <a href="login.jsp" name="mydangdang" class="head_black12a">登录</a> |
+							<a href="register.jsp" name="helpcenter" class="head_black12a"
+							   target="_blank">注册</a> | </span> </span>
 					<div class="cart gray4012">
 						<a href="cart.html">购物车</a>
 					</div>
@@ -105,8 +105,8 @@
 						</h5>
 						<div class="clear"></div>
 						<h6>
-							<span class="del">定价</span>
-							<span class="red">当当价</span> 节省：<%=book.getFixedPrice()-book.getDangPrice()%>
+							<span class="del">定价:<%=book.getFixedPrice()%></span>
+							<span class="red">当当价:<%=book.getDangPrice()%></span> 节省：<%=book.getFixedPrice()-book.getDangPrice()%>
 						</h6>
 						<span class="list_r_list_button"> <img align="top"
 															   src='images/buttom_goumai.gif'

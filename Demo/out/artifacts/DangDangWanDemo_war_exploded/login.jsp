@@ -1,3 +1,4 @@
+<%@page pageEncoding="UTF-8" contentType="text/html; UTF-8" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 	<head>
@@ -73,7 +74,7 @@
 							您还不是当当网用户？
 						</p>
 						<p class="set_up">
-							<a href="register.html">创建一个新用户&gt;&gt;</a>
+							<a href="register.jsp">创建一个新用户&gt;&gt;</a>
 						</p>
 					</div>
 				</div>
