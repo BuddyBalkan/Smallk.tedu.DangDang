@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery 语法演示</title>
+	<script type="text/javascript" src="./jquery-1.4.3.js"></script>
+	<script >
+		// 延迟加载
+		$(function(){
+			/**
+			 * 设置内容 注意方法参数
+			 */
+			// document.getElementById("buttonSetting");
+			// 并绑定单击事件
+			$("#buttonSetting").click(function(){ // $("#id的名称")
+				// alert("hello,JQuery");  // Test
+				$("#div1").text("<em>111</em>");
+				$("#div2").html("<em>2222</em>");
+				// $("#div2").html(<em>2222</em>);
+				$("#content").val("这是点击后默认输入的内容"); //val value
+				// 样式
+				$("#div2").css("color","red").css("font-size","7em");
+				$("#image1").attr("src","./nice笑脸.jpg") // attr attrubite
+							.attr("title","林的手机壳")
+							.attr("width","400")
+							.attr("heigh","400")
+							.attr("border","7");
+			});
+			/**
+			 * 获取内容 注意方法参数
+			 */
+			$("#buttonGetting").click(function(){
+				$("#thisIsASpan").text( $("#buttonSetting").val() 
+					+ $("#image1").attr("id") );
+			});
+
+			$("#setCenter").click(function(){
+				$("#body").attr("align","center");
+			});
+
+		});
+	</script>
+</head>
+<body id="body">
+	<input type="button" name="setting" value="设置属性" id="buttonSetting">
+	<input type="button" name="getting" value="获取属性" id="buttonGetting">
+	<div id="div1"> div标记1</div>
+	<div id="div2"> div标记2</div>
+	<input type="text" name="text" id="content">
+	<span id="thisIsASpan"> spanNote</span></br>
+	<img id="image1"></br>
+	<input type="button" name="center" id="setCenter" value="整体居中显示">
+</body>
+</html>

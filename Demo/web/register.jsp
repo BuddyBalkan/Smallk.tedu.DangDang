@@ -88,15 +88,15 @@
                 </td>
                 <td>
                     <img class="yzm_img" align="middle" id="validateImage"
-                         src="imageCode.action" width="150" height="40"
-                         onclick="this.src='imageCode.action?time-'+(new Date()).getTime();"/>
+                         src="/imageCode" width="150" height="40"
+                         onclick="this.src='/imageCode?time-'+(new Date()).getTime();"/>
                     <input type="text" name="validateCode" id="validateCode"
                            class="yzm_input">
                     <div class="text_left t1">
                         <p class="t1">
                             <span id="vcodeValidMsg">请输入图片中的验证码。</span>
                             <a href="javascript:"
-                               onclick="document.getElementById('validateImage').src='imageCode.action?time-'+(new Date()).getTime();">看不清，再换一张</a>
+                               onclick="document.getElementById('validateImage').src='/imageCode?time-'+(new Date()).getTime();">看不清，再换一张</a>
                         </p>
                         <span id="numberInfo" style="color: red"></span>
                     </div>

@@ -20,4 +20,12 @@
         <servlet-name>Register</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ImageCodeVerifiedServlet</servlet-name>
+        <servlet-class>com.tedu.web.ImageCodeVerifiedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImageCodeVerifiedServlet</servlet-name>
+        <url-pattern>/imageCode</url-pattern>
+    </servlet-mapping>
 </web-app>
