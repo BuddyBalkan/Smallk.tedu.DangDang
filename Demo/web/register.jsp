@@ -6,6 +6,9 @@
     <link href="css/login.css" rel="stylesheet" type="text/css"/>
     <link href="css/page_bottom.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./js/jquery-1.4.3.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
+
 </head>
 <body>
 <div class="login_top">

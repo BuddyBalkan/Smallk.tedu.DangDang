@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery 完成图片淡入淡出效果</title>
+	<script type="text/javascript" src="jquery-1.4.3.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#showImage").click(function(){
+				// alert("succeed"); // Test
+				$("#thisIsAPicture").attr("src","./nice笑脸.jpg").fadeIn(3000);
+			});
+			$("#hiddenImage").click(function(){
+				// alert("成功"); // Test
+				$("#thisIsAPicture").fadeOut(3000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" name="show" id="showImage" value="淡入图片">
+	<input type="button" name="hidden" id="hiddenImage" value="淡出图片"></br>
+	<img id="thisIsAPicture">
+</body>
+</html>
