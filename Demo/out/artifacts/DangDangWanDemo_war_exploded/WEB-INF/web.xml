@@ -28,4 +28,12 @@
         <servlet-name>ImageCodeVerifiedServlet</servlet-name>
         <url-pattern>/imageCode</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>CheckEmailServlet</servlet-name>
+        <servlet-class>com.tedu.web.CheckEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckEmailServlet</servlet-name>
+        <url-pattern>/checkEmail</url-pattern>
+    </servlet-mapping>
 </web-app>

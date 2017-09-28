@@ -46,6 +46,10 @@ public class ImageCodeVerifiedServlet extends HttpServlet {
         JPEGImageEncoder jpegImageEncoder = JPEGCodec.createJPEGEncoder(outputStream);
         jpegImageEncoder.encode(bufferedImage);
 
+//        // 发送验证码数字到register.jsp中 以便在js文件中进行验证
+//        req.setAttribute("numberCode",numCode);
+//        req.getRequestDispatcher("register.jsp").forward(req,resp);
+
 
 
     }
