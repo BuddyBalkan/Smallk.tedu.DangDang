@@ -11,15 +11,26 @@ $(function () {
        }else { //输入不为空 判断格式
             var reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
             if (reg.test(emailContent)){ // 邮箱正确
-                $("#emailInfo")
-                    .text("本AI宣布：这个邮箱可以有")
-                    .css("color","#11ab83");
                 // 在邮箱格式正确的情况下 判断是否该邮箱是否被注册
                 // Ajax技术 实现局部刷新
                 $.ajax({
                    type:"get",
                    url:"/checkEmail",
-                   data:{email:$(this).val()}
+                   data:{email:$(this).val()},
+
+                    success:function (flag) {
+                        alert(flag); // Test
+                        if (flag == 1){
+                            $("#emailInfo")
+                                .text("哎呀，这个账户有人注册过啦")
+                                .css("color","#ff0000");
+                        };
+                        if (flag == 0){
+                            $("#emailInfo")
+                                .text("本AI宣布：这个邮箱可以有")
+                                .css("color","#11ab83");
+                        }
+                    }
                 });
             }else { // 邮箱不正确
                 $("#emailInfo")
@@ -84,10 +95,26 @@ $(function () {
                 .text("啧啧啧，是不是小手抖一下，不小心输入错误了")
                 .css("color","#ff0000");
         }
-    })
+    });
 
 
    // 验证码imageCode验证
+    $("#validateCode").blur(function () {
+       if ($("#validateCode").val().length == 0){
+           $("#numberInfo")
+               .text("本AI需要确认你是不是人类")
+               .css("color","#ff0000");
+       }else { // 将用户输入的验证码 发送至服务器 由服务器来检查输入是否正确
+           $.ajax({
+               type:"get",
+               url:"/checkCode",
+               data:{ verificationCode: $(this).val()},
+               success:(function (flag) {
 
+               })
+
+           })
+       }
+    })
 
 });

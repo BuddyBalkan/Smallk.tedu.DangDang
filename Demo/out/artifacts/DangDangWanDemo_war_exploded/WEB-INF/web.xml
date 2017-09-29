@@ -36,4 +36,12 @@
         <servlet-name>CheckEmailServlet</servlet-name>
         <url-pattern>/checkEmail</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>CheckCodeServlet</servlet-name>
+        <servlet-class>com.tedu.web.CheckCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckCodeServlet</servlet-name>
+        <url-pattern>/checkCode</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * 控制层
@@ -21,8 +22,15 @@ public class CheckEmailServlet extends HttpServlet{
 //        String s = req.getParameter("email");
 //        System.out.println(s); // Test
 //        System.out.println(UserDao.getUserCellsByEmail(req.getParameter("email"))); // Test
-        if (UserDao.getUserCellsByEmail(req.getParameter("email"))){
-
+        PrintWriter out = resp.getWriter();
+//        out.println(UserDao.getUserCellsByEmail(req.getParameter("email")));
+        if (UserDao.getUserCellsByEmail(req.getParameter("email"))){// true表示数据库中已经存在该Email 不能再注册
+            out.println("1");
+        }else {
+            out.println("0");
         }
+
+
+
     }
 }
