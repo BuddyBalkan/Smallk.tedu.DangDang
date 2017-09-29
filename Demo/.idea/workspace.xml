@@ -54,21 +54,46 @@
       <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+            <state relative-caret-position="714">
+              <caret line="152" column="3" lean-forward="true" selection-start-line="152" selection-start-column="3" selection-end-line="152" selection-end-column="3" />
+              <folding>
+                <element signature="e#216#1763#0" expanded="false" />
+                <element signature="e#1828#2520#0" expanded="false" />
+                <element signature="e#2585#3287#0" expanded="false" />
+                <element signature="e#4063#4980#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booklist.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/booklist.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckCodeServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/tedu/web/CheckCodeServlet.java">
+      <file leaf-file-name="BookListServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tedu/web/BookListServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1506482795757" expanded="true" signature="1304:1324" ph="SELECT * FRO... d_book" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageCodeVerifiedServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tedu/web/ImageCodeVerifiedServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,9 +101,21 @@
       <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="527">
               <caret line="103" column="44" lean-forward="false" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckCodeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tedu/web/CheckCodeServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/com/tedu/web/BookLlistServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tedu/bean/D_book.java" />
         <option value="$PROJECT_DIR$/src/com/tedu/bean/DBook.java" />
-        <option value="$PROJECT_DIR$/web/booklist.jsp" />
         <option value="$PROJECT_DIR$/src/com/tedu/bean/DUser.java" />
         <option value="$PROJECT_DIR$/src/com/tedu/dao/BookDao.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
@@ -124,13 +160,14 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/901b978a-4bc4-4b99-a0af-c7671d377d0b/console.sql" />
         <option value="$PROJECT_DIR$/web/js/正则表达式.txt" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/src/com/tedu/web/ImageCodeVerifiedServlet.java" />
         <option value="$PROJECT_DIR$/src/com/tedu/util/DBUtil.java" />
         <option value="$PROJECT_DIR$/src/com/tedu/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/com/tedu/web/CheckEmailServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/js/register.js" />
         <option value="$PROJECT_DIR$/src/com/tedu/web/CheckCodeServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/tedu/web/ImageCodeVerifiedServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/register.js" />
+        <option value="$PROJECT_DIR$/web/booklist.jsp" />
       </list>
     </option>
   </component>
@@ -178,9 +215,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,6 +289,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -852,11 +889,12 @@
       <workItem from="1506563508994" duration="5206000" />
       <workItem from="1506579007018" duration="9368000" />
       <workItem from="1506647610096" duration="6885000" />
+      <workItem from="1506665775037" duration="5132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60138000" />
+    <option name="totallyTimeSpent" value="65270000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -915,7 +953,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -936,7 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,33 +1136,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/booklist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tedu/web/BookListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <marker date="1506482795757" expanded="true" signature="1304:1324" ph="SELECT * FRO... d_book" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tedu/util/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-          <folding>
-            <element signature="method#getConnection#0;class#DBUtil#0" expanded="false" />
-            <element signature="method#Close#0;class#DBUtil#0" expanded="false" />
-            <element signature="method#Close#1;class#DBUtil#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,13 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="43" column="59" lean-forward="false" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
-          <folding>
-            <element signature="method#InsertRegistedInfo#0;class#UserDao#0" expanded="false" />
-            <element signature="method#getUserCellsByEmail#0;class#UserDao#0" expanded="false" />
-            <element signature="e#2099#2108#0" expanded="false" />
-            <marker date="1506590355629" expanded="true" signature="673:734" ph="INSERT INTO d_user... " />
-            <marker date="1506590355629" expanded="true" signature="1628:1664" ph="SELECT * FRO... d_user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,15 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tedu/web/ImageCodeVerifiedServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="50" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,10 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#702#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1255,28 +1249,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tedu/web/CheckCodeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="527">
           <caret line="103" column="44" lean-forward="false" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tedu/web/ImageCodeVerifiedServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="714">
+          <caret line="152" column="3" lean-forward="true" selection-start-line="152" selection-start-column="3" selection-end-line="152" selection-end-column="3" />
+          <folding>
+            <element signature="e#216#1763#0" expanded="false" />
+            <element signature="e#1828#2520#0" expanded="false" />
+            <element signature="e#2585#3287#0" expanded="false" />
+            <element signature="e#4063#4980#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/booklist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tedu/web/CheckCodeServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tedu/web/BookListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1506482795757" expanded="true" signature="1304:1324" ph="SELECT * FRO... d_book" />
           </folding>
         </state>
       </provider>

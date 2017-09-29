@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -46,10 +47,9 @@ public class ImageCodeVerifiedServlet extends HttpServlet {
         JPEGImageEncoder jpegImageEncoder = JPEGCodec.createJPEGEncoder(outputStream);
         jpegImageEncoder.encode(bufferedImage);
 
-//        // 发送验证码数字到register.jsp中 以便在js文件中进行验证
-//        req.setAttribute("numberCode",numCode);
-//        req.getRequestDispatcher("register.jsp").forward(req,resp);
-
+        // 创建Session 以便跨servlet通信
+        HttpSession session = req.getSession();
+        session.setAttribute("verificationCode",numCode + "");
 
 
     }

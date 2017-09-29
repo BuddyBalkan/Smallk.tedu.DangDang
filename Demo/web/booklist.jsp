@@ -28,7 +28,7 @@
 					<span class="head_welcome_text"> <span class="little_n">
 							| <a href="login.jsp" name="mydangdang" class="head_black12a">登录</a> |
 							<a href="register.jsp" name="helpcenter" class="head_black12a"
-							   target="_blank">注册</a> | </span> </span>
+							   target="_self">注册</a> | </span> </span>
 					<div class="cart gray4012">
 						<a href="cart.html">购物车</a>
 					</div>
